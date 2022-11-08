@@ -1,7 +1,8 @@
 import sys
 
 REMOVE = 'remove.txt'
-WORD_FILE = 'curated_words.txt'
+#WORD_FILE = 'curated_words.txt'
+WORD_FILE = 'scrabble-lower.txt'
 
 try:
     removed_word = sys.argv[1]

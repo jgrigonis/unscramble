@@ -1,9 +1,9 @@
 import argparse
 import os
 
-WORD_FILE = 'curated_words.txt'
-#WORD_FILE = 'words_alpha.txt'
 
+WORD_FILE = 'word_files' + os.sep + 'scrabble-lower.txt'
+REMOVE = 'remove.txt'
 
 def check_words(scrambled, min):
     found_words = []
@@ -41,11 +41,11 @@ def main():
     args = parse_args()
     found_words = check_words(args.scrambled, args.min)
     try:
-        os.remove('remove.txt')
+        os.remove(REMOVE)
     except FileNotFoundError:
         pass
     for word in found_words:
-        with open('remove.txt', 'a') as remove_file:
+        with open(REMOVE, 'a') as remove_file:
             remove_file.write(word)
             remove_file.write('\n')
         print(word)
