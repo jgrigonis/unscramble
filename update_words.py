@@ -4,7 +4,7 @@ import sys
 REMOVE = 'remove.txt'
 FOUND = 'found.txt'
 CONFIRMED = 'confirmed.txt'
-WORD_FILE = 'word_files' + os.sep + 'scrabble-lower.txt'
+WORD_FILE = 'word_files' + os.sep + 'word-list.txt'
 
 with open(REMOVE) as remove_file:
     remove_list = remove_file.readlines()

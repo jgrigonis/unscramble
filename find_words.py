@@ -2,7 +2,7 @@ import argparse
 import os
 
 
-WORD_FILE = 'word_files' + os.sep + 'scrabble-lower.txt'
+WORD_FILE = 'word_files' + os.sep + 'word-list.txt'
 REMOVE = 'remove.txt'
 FOUND = 'found.txt'
 
